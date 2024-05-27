@@ -12,7 +12,7 @@ class TrainController extends Controller
     {
 
         // recuperare i treni in partenza oggi 
-        $trains = Train::all();
+        $trains = Train::whereDate('departure_time', today())->get();
         // dd($trains);
 
         // ritornare la vista home con i treni 
