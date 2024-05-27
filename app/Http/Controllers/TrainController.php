@@ -13,9 +13,9 @@ class TrainController extends Controller
 
         // recuperare i treni in partenza oggi 
         $trains = Train::all();
-        dd($trains);
+        // dd($trains);
 
         // ritornare la vista home con i treni 
-        return view('home');
+        return view('home', compact('trains'));
     }
 }

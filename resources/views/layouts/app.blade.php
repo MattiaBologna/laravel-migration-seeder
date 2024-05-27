@@ -10,7 +10,7 @@
         @include('partials.header')
 
         <main class="flex-grow-1">
-            MAIN
+            @yield('content')
         </main>
 
         @include('partials.footer')
